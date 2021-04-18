@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  background-color: steelblue;
+  color: whitesmoke;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column;
+}
+
+.title {
+  padding: .5em;
+}
+
+.description {
+  margin: 1.2em auto;
+  padding: .5em;
+}
+
+button {
+  background-color: whitesmoke;
+  color: steelblue;
+  padding: .5em;
+  border: .5em solid whitesmoke;
+  border-radius: .5em;
+  font-size: 1em;
+}
