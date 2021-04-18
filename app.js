@@ -1,6 +1,7 @@
 const button = document.getElementById("fetchCountryButton")
 const countryName = document.getElementById("countryName")
 const countryText = document.getElementById("countryText")
+const countryFlag = document.getElementById("countryFlag")
 let data = {}
 
 const fetchData = () => {
@@ -28,6 +29,7 @@ const generateNewCountry = () => {
   const region = country.region
   const population = country.population
   const capital = country.capital
+  const flag = country.flag
 
   //(this one requires us to loop through the array of languages and convert to a string.
   // we might want to change the text slightly if there is more than one language.)
@@ -46,6 +48,7 @@ const generateNewCountry = () => {
   }
 
  countryName.innerText = name
+ countryFlag.src = flag
  countryText.innerHTML = `This country in the <b>${region}</b> region has a population size of <b>${population}</b>. The language${
    numOfLanguages === 1 ? "" : "s"
  } spoken here ${
