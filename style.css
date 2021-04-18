@@ -3,6 +3,7 @@
   background-color: steelblue;
   color: whitesmoke;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
 }
 
 .container {
@@ -18,9 +19,10 @@
   padding: .5em;
 }
 
-.description {
+p {
   margin: 1.2em auto;
   padding: .5em;
+  line-height: 1.5em;
 }
 
 button {
@@ -35,4 +37,9 @@ button {
 img {
   width: 200px;
   height: auto;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 1em auto;
 }

@@ -34,21 +34,23 @@ const generateNewCountry = () => {
   let languages = country.languages[0].name
   const numOfLanguages = country.languages.length
   if (numOfLanguages !== 1) {
+    console.log(country.languages)
     country.languages.forEach((newLanguage, index) => {
-      if (index !== 0 && index === numOfLanguages - 1) {
+      console.log('index: ' + index)
+      if (index !== 0 && index !== (numOfLanguages - 1)) {
         languages = languages + ", " + newLanguage.name
-      } else if (index === numOfLanguages - 1) {
+      } else if (index === (numOfLanguages - 1)) {
         languages = languages + " and " + newLanguage.name
       }
     })
   }
 
  countryName.innerText = name
- countryText.innerText = `This country in the ${region} region has a population size of ${population}. The language${
+ countryText.innerHTML = `This country in the <b>${region}</b> region has a population size of <b>${population}</b>. The language${
    numOfLanguages === 1 ? "" : "s"
  } spoken here ${
    numOfLanguages === 1 ? "is" : "are"
- } ${languages}. The nation's capital is ${capital}.`
+ } <b>${languages}</b>. The nation's capital is <b>${capital}</b>.`
 }
 
 fetchData()
