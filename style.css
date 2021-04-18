@@ -31,3 +31,8 @@ button {
   border-radius: .5em;
   font-size: 1em;
 }
+
+img {
+  width: 200px;
+  height: auto;
+}
